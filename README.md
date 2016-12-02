@@ -1,10 +1,10 @@
 Teensy-RET
 =======
 
-Reverse Engineering Tool based around a custom board with a socket for Teensy 3.6. The board also has SN65HVD234 transceivers, 
-an I2C to OneWire interface chip, and an Adafruit BLE module. Only the transceivers are relevant to this project but the project
-is setup to use pin 2 for enabling CAN0 and pin 35 for CAN1 enable. Set this as appropriate for your designs or to 255 to disable
-if no enable pin is needed.
+Reverse Engineering Tool based around a custom board with a socket for Teensy 3.6. The board also has SN65HVD234
+transceivers, an I2C to OneWire interface chip, and an Adafruit BLE module. Only the transceivers are relevant to this
+project but the project is setup to use pin 2 for enabling CAN0 and pin 35 for CAN1 enable. Set this as appropriate for your
+designs or to 255 to disable if no enable pin is needed.
 
 The project builds with the Arduino IDE with the TeensyDuino add-on
 
@@ -14,8 +14,11 @@ compatibility with SavvyCAN, ability to read frames to the console, and stabilit
 #### Requirements:
 
 1.6.x Arduino IDE
+
 TeensyDuino 1.31 or newer
+
 FlexCAN library from me (https://github.com/collin80/FlexCAN_Library)
+
 SDCard-Beta library  (https://github.com/greiman/SdFat-beta)
 
 The canbus is supposed to be terminated on both ends of the bus. This should not be a problem as this firmware will be used to reverse engineer existing buses.
